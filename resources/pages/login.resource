@@ -20,3 +20,10 @@ Toast Message Should Be
     ${locator}         Set Variable    css=.Toastify__toast-body div >> text=${expected_message}
 
     Wait For Elements State    ${locator}    visible    1
+
+Toast Message
+    [Arguments]        ${expected_message}
+
+    ${locator}         Set Variable    css=.Toastify__toast-body div >> text=${expected_message}
+
+    Wait For Elements State    ${locator}    visible    1
